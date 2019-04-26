@@ -12,12 +12,16 @@ public class DBConnect
     private Connection connection;
     public Statement statement;
     private ResultSet resultSet;
-
+    private static final String URL = "jdbc:mysql://localhost/DB_NAME";
+    private static final String USER_NAME = "root";
+    private static final String PASSWORD = "root";
+    
     public DBConnect()
     {
         try
         {
-            connection = DriverManager.getConnection("local/car_showroom", "root", "");
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(URL, USER_NAME, PASSWORD);
 
             statement = connection.createStatement();
         } catch (Exception e)
