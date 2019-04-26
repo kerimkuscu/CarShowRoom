@@ -25,12 +25,12 @@
                 <Font name="Verdana Bold" size="14.0" />
             </font>
         </Button>
-        <Label layoutX="221.0" layoutY="190.0" text="Welcome to Otto Spark Showroom" textFill="#5e5e5e">
+        <Label layoutX="221.0" layoutY="190.0" text="Welcome to Zengin Kuscu Showroom" textFill="#5e5e5e">
             <font>
                 <Font name="Microsoft JhengHei UI" size="17.0" />
             </font>
         </Label>
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="311.0" layoutY="431.0" text="© OTTO SPARK 2017" textFill="#656565">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="311.0" layoutY="431.0" text="© Zengin Kuscu 2017" textFill="#656565">
             <font>
                 <Font name="Lato Regular" size="10.0" />
             </font>

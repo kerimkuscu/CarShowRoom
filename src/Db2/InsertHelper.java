@@ -37,7 +37,7 @@ public class InsertHelper
             Scene scene = new Scene(parentFXML, 413, 760);
             windowStage.getIcons().add(new Image("assets/icon.png"));
             windowStage.initModality(Modality.APPLICATION_MODAL);
-            windowStage.setTitle("OTTO SPARK");
+            windowStage.setTitle("ZENGIN KUSCU");
             windowStage.setScene(scene);
             TextField Chassis = (TextField) scene.lookup("#Chassis");
             TextField Engine_no = (TextField) scene.lookup("#Engine_no");
@@ -108,7 +108,7 @@ public class InsertHelper
             Parent parentFXML = FXMLLoader.load(getClass().getResource("AddCustomer.fxml"));
             Scene scene = new Scene(parentFXML, 413, 441);
             windowStage.getIcons().add(new Image("assets/icon.png"));
-            windowStage.setTitle("OTTO SPARK");
+            windowStage.setTitle("ZENGIN KUSCU");
             windowStage.setScene(scene);
 
             TextField n_id = (TextField) scene.lookup("#n_id");
@@ -168,7 +168,7 @@ public class InsertHelper
             Parent parentFXML = FXMLLoader.load(getClass().getResource("AddEmployee.fxml"));
             Scene scene = new Scene(parentFXML, 413, 441);
             windowStage.getIcons().add(new Image("assets/icon.png"));
-            windowStage.setTitle("OTTO SPARK");
+            windowStage.setTitle("ZENGIN KUSCU");
             windowStage.setScene(scene);
 
 
