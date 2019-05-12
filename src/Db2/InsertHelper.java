@@ -31,13 +31,13 @@ public class InsertHelper
         {
             response = false;
             Stage windowStage = new Stage();
-            windowStage.getIcons().add(new Image("assets/icon.png"));
+            windowStage.getIcons().add(new Image("/assets/icon.png"));
             windowStage.initModality(Modality.APPLICATION_MODAL);
-            Parent parentFXML = FXMLLoader.load(getClass().getResource("AddCar.fxml"));
+            Parent parentFXML = FXMLLoader.load(getClass().getResource("view/AddCar.fxml"));
             Scene scene = new Scene(parentFXML, 413, 760);
-            windowStage.getIcons().add(new Image("assets/icon.png"));
+            windowStage.getIcons().add(new Image("/assets/icon.png"));
             windowStage.initModality(Modality.APPLICATION_MODAL);
-            windowStage.setTitle("OTTO SPARK");
+            windowStage.setTitle("Add New Car");
             windowStage.setScene(scene);
             TextField Chassis = (TextField) scene.lookup("#Chassis");
             TextField Engine_no = (TextField) scene.lookup("#Engine_no");
@@ -70,8 +70,9 @@ public class InsertHelper
             {
                 try
                 {
+
                     String _s = "INSERT INTO car VALUES (" + Chassis.getText() + "," + Engine_no.getText() + "," + CC.getText() + ",\'" + Color.getText() + "\',\'" + Transmission.getText() + "\',\'" + Brand.getText() + "\'," + Price.getText() + ",\'" + Car_type.getText() + "\',\'" + Designer.getText() + "\'," + HP.getText() + ",\'" + fourwheel_drive.getText() + "\',\'" + Fog_light.getText() + "\',\'" + Ignition.getText() + "\'," + Door.getText() + "," + Seat.getText() + "," + Salesman_id.getText() + "," + Customer_id.getText() + "," + Quantity.getText() + ")";
-                    System.out.println(_s);
+                  System.out.println(_s);
                     dbConnect.statement.executeUpdate(_s);
                     response = true;
 
@@ -103,12 +104,12 @@ public class InsertHelper
         {
             response = false;
             Stage windowStage = new Stage();
-            windowStage.getIcons().add(new Image("assets/icon.png"));
+            windowStage.getIcons().add(new Image("/assets/icon.png"));
             windowStage.initModality(Modality.APPLICATION_MODAL);
-            Parent parentFXML = FXMLLoader.load(getClass().getResource("AddCustomer.fxml"));
+            Parent parentFXML = FXMLLoader.load(getClass().getResource("view/AddCustomer.fxml"));
             Scene scene = new Scene(parentFXML, 413, 441);
-            windowStage.getIcons().add(new Image("assets/icon.png"));
-            windowStage.setTitle("OTTO SPARK");
+            windowStage.getIcons().add(new Image("/assets/icon.png"));
+            windowStage.setTitle("Add New Customer");
             windowStage.setScene(scene);
 
             TextField n_id = (TextField) scene.lookup("#n_id");
@@ -163,12 +164,12 @@ public class InsertHelper
         {
             response = false;
             Stage windowStage = new Stage();
-            windowStage.getIcons().add(new Image("assets/icon.png"));
+            windowStage.getIcons().add(new Image("/assets/icon.png"));
             windowStage.initModality(Modality.APPLICATION_MODAL);
-            Parent parentFXML = FXMLLoader.load(getClass().getResource("AddEmployee.fxml"));
+            Parent parentFXML = FXMLLoader.load(getClass().getResource("view/AddEmployee.fxml"));
             Scene scene = new Scene(parentFXML, 413, 441);
-            windowStage.getIcons().add(new Image("assets/icon.png"));
-            windowStage.setTitle("OTTO SPARK");
+            windowStage.getIcons().add(new Image("/assets/icon.png"));
+            windowStage.setTitle("Add New Employee");
             windowStage.setScene(scene);
 
 

@@ -40,12 +40,12 @@ public class Main extends Application
     public void start(Stage primaryStage) throws Exception
     {
         this.primaryStage = primaryStage;
-        this.primaryStage.getIcons().add(new Image("assets/icon.png"));
+        this.primaryStage.getIcons().add(new Image("/assets/icon.png"));
 
         dbConnect = new DBConnect(); //database
         insertHelper = new InsertHelper(dbConnect);
 
-        start_fxml = FXMLLoader.load(getClass().getResource("Start.fxml"));
+        start_fxml = FXMLLoader.load(getClass().getResource("view/Start.fxml"));
 
         primaryStage.setTitle("Oto Showroom");
         Scene start_scene = new Scene(start_fxml, 720, 480);
@@ -73,7 +73,7 @@ public class Main extends Application
         Parent loginpanel_fxml = null;
         try
         {
-            loginpanel_fxml = FXMLLoader.load(getClass().getResource("Login.fxml"));
+            loginpanel_fxml = FXMLLoader.load(getClass().getResource("view/Login.fxml"));
             Scene login_scene = new Scene(loginpanel_fxml, 720, 480);
             Button login_bt = (Button) login_scene.lookup("#id_login_button");
             TextField lf_username = (TextField) login_scene.lookup("#id_tf_un");
@@ -146,7 +146,7 @@ public class Main extends Application
         Parent salesmanPanel_fxml = null;
         try
         {
-            salesmanPanel_fxml = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+            salesmanPanel_fxml = FXMLLoader.load(getClass().getResource("view/Dashboard.fxml"));
             Scene managerPanel_scene = new Scene(salesmanPanel_fxml, 1280, 720);
 
             Pane topPane = (Pane) managerPanel_scene.lookup("#id_top");
@@ -245,7 +245,7 @@ public class Main extends Application
         Parent managerPanel_fxml = null;
         try
         {
-            managerPanel_fxml = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+            managerPanel_fxml = FXMLLoader.load(getClass().getResource("view/Dashboard.fxml"));
             Scene managerPanel_scene = new Scene(managerPanel_fxml, 1280, 720);
 
 
@@ -1355,7 +1355,7 @@ public class Main extends Application
         Parent carBrowserpanel_fxml = null;
         try
         {
-            carBrowserpanel_fxml = FXMLLoader.load(getClass().getResource("CarBrowser.fxml"));
+            carBrowserpanel_fxml = FXMLLoader.load(getClass().getResource("view/CarBrowser.fxml"));
             Scene carBrowser_scene = new Scene(carBrowserpanel_fxml, 1280, 720);
 
             Button searchBy_Brand_bt = (Button) carBrowser_scene.lookup("#id_bt_searchByBrand");

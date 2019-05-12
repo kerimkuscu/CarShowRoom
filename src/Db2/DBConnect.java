@@ -17,7 +17,7 @@ public class DBConnect
     {
         try
         {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/carshow5", "root", "eralp1234");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/carshow6", "root", "eralp1234");
 
             statement = connection.createStatement();
         } catch (Exception e)
